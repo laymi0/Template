@@ -6,9 +6,6 @@ import asyncio
 
 from data import config
 
-
-
-
 from middlewares.throttling import ThrottlingMiddleware
 
 from handlers.users import register_start
