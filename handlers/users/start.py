@@ -1,10 +1,9 @@
-from aiogram import Dispatcher
-from aiogram.types import *
+from aiogram import Dispatcher, types
 from aiogram.dispatcher.filters.builtin import CommandStart
 
 
 
-async def bot_start(msg: Message):
+async def bot_start(msg: types.Message):
     await msg.answer(f"Привет, {msg.from_user.full_name}!")
 
 
